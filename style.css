@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --green: hsl(75, 94%, 57%);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--off-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    min-height: 100vh;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-grey);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+img {
+    border-radius: 50%;
+    height: 10rem;
+}
+
+.profile-name {
+    color: var(--white);
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.profile-location {
+    color: var(--green);
+    margin: 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profile-intro {
+    color: var(--white);
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.card-social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.social-button {
+    background-color: var(--grey);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1rem;
+    width: calc(100% + 3rem);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-button:hover {
+    background-color: var(--green);
+    color: var(--dark-grey);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+
+
+    .profile-card {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .profile-name {
+        font-size: 1rem;
+    }
+
+    .profile-location {
+        font-size: 0.875rem;
+    }
+
+    .profile-intro {
+        font-size: 0.75rem;
+    }
+
+    .social-button {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+}
